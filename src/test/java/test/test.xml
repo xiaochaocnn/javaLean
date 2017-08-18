@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CMBSDKPGK>
+	<INFO>
+		<FUNNAM>funnam</FUNNAM>
+		<DATTYP>xml</DATTYP>
+		<LGNNAM>nana.chao</LGNNAM>
+	</INFO>
+	<SDKACINFX>
+		<BBKNBR>001</BBKNBR>
+		<C_BBKNBR>招商银行</C_BBKNBR>
+		<ACCNBR>18811072032</ACCNBR>
+	</SDKACINFX>
+</CMBSDKPGK>
