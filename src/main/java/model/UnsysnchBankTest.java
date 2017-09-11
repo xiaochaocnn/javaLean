@@ -1,7 +1,7 @@
 package model;
 
 public class UnsysnchBankTest {
-	public static final int NACCOUNTS = 100;
+	public static final int NACCOUNTS = 2;
 	public static final double INNITIAL_BALANCE = 1000;
 
 	public static void main(String[] args) {
