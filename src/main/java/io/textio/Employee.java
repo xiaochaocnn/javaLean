@@ -1,15 +1,18 @@
 package io.textio;
 
 public class Employee {
+	public static int NAME_SIZE=10;
+	public static int RECORD_SIZE=11;
 	private String name;
-	private Double salary;
+	private double salary;
 
-	public Employee(String name, Double salary) {
+	public Employee(String name, double salary) {
 		super();
 		this.name = name;
 		this.salary = salary;
 	}
 
+	public Employee(){}
 	public String getName() {
 		return name;
 	}

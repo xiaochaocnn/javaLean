@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans.xsd  
+	http://www.springframework.org/schema/context  
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd">
+    
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	<context:component-scan base-package="aop" />
+	<!-- <bean id="performance" class="aop.PerformanceImpl"></bean>
+	<bean id="performAspect" class="aop.PerformAspect"></bean>
+	<aop:config>
+		<aop:aspect ref="performAspect">
+			<aop:pointcut expression="execution(* aop.*.*(..))" id="performPiontcut" />
+			<aop:before method="performBefore" pointcut-ref="performPiontcut" />
+			<aop:after-returning method="performAfter" pointcut-ref="performPiontcut"/>
+			<aop:after method="performLast" pointcut-ref="performPointcut"/>
+		</aop:aspect>
+	</aop:config> -->
+</beans>
