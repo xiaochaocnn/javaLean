@@ -1,8 +1,6 @@
-package io.textio;
+package io.clone;
 
-public class Employee {
-	public static int NAME_SIZE=20;
-	public static int RECORD_SIZE=48;
+public class Employee extends SerialCloneable{
 	private String name;
 	private double salary;
 

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @author admin
  * 2017年11月6日
  */
-@Component
+@Component("cDPlayer")
 public class CDPlayer implements MediaPlayer {
   
 	private CompactDisc cd;
@@ -22,7 +22,7 @@ public class CDPlayer implements MediaPlayer {
 	}
 	
 	public void play(){
-		cd.play();
+		System.out.println("CDPlayer....");
 	}
 
 }

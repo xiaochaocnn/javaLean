@@ -11,7 +11,7 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
     
     <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
-	<context:component-scan base-package="aop" />
+	<context:component-scan base-package="spring.*" />
 	<!-- <bean id="performance" class="aop.PerformanceImpl"></bean>
 	<bean id="performAspect" class="aop.PerformAspect"></bean>
 	<aop:config>

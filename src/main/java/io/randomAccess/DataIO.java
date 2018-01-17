@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class DataIO {
     public static void wirteFixedString(String s,int size,DataOutput out) throws IOException{
-    	for(int i=0;i<s.length();i++){
+    	for(int i=0;i<size;i++){
     		char ch=0;
     		if(i<s.length()) 
     			ch=s.charAt(i);

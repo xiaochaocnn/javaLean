@@ -20,13 +20,13 @@ public class RandomAccessTest {
             //2.读出文本
 			RandomAccessFile in=new RandomAccessFile("employee.txt","r");
 			int n=(int)(in.length()/Employee.RECORD_SIZE);
-			Employee[] employeess=new Employee[n];
+			Employee[] newEmployees=new Employee[n];
 			for(int i=n-1;i>=0;i--){
-				employees[i]=new Employee();
+				newEmployees[i]=new Employee();
 				in.seek(i*Employee.RECORD_SIZE);
-				employees[i]=readData(in);
+				newEmployees[i]=readData(in);
 			}
-			for (Employee employee : employeess) {
+			for (Employee employee : newEmployees) {
 				System.out.println(employee);
 			}
 		} catch (FileNotFoundException e) {
