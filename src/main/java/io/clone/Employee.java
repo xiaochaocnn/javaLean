@@ -1,6 +1,8 @@
 package io.clone;
 
-public class Employee extends SerialCloneable{
+import java.io.Serializable;
+
+public class Employee implements Serializable{//SerialCloneable
 	private String name;
 	private double salary;
 
@@ -27,7 +29,6 @@ public class Employee extends SerialCloneable{
 		this.salary = salary;
 	}
 
-	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", salary=" + salary + "]";
 	}
